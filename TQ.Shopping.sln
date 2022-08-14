@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TQ.Shopping", "TQ.Shopping\TQ.Shopping.csproj", "{498EE569-F464-471E-B488-83847A760B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TQ.Shopping.Tests", "TQ.Shopping.Tests\TQ.Shopping.Tests.csproj", "{F23164C7-0A15-4D5A-9C05-5ED6D7185C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{498EE569-F464-471E-B488-83847A760B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498EE569-F464-471E-B488-83847A760B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498EE569-F464-471E-B488-83847A760B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498EE569-F464-471E-B488-83847A760B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23164C7-0A15-4D5A-9C05-5ED6D7185C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23164C7-0A15-4D5A-9C05-5ED6D7185C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23164C7-0A15-4D5A-9C05-5ED6D7185C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23164C7-0A15-4D5A-9C05-5ED6D7185C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC045578-0309-4583-B3F2-EA74E2C6A7DE}
+	EndGlobalSection
+EndGlobal
