@@ -1,4 +1,4 @@
-﻿namespace TQ.Shopping
+﻿namespace TQ.Shopping.Discounts.Calculators
 {
 	public interface IDiscountCalculator
 	{

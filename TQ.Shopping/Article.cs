@@ -35,6 +35,11 @@
 			Discount = discount;
 		}
 
+		public bool IsDiscountApplied()
+		{
+			return Discount != default;
+		}
+
 		#endregion
 
 		#region Private Methods

@@ -1,4 +1,5 @@
-﻿using TQ.Shopping.Loggers;
+﻿using TQ.Shopping.Discounts.Calculators;
+using TQ.Shopping.Loggers;
 using TQ.Shopping.TotalSum;
 
 namespace TQ.Shopping
@@ -7,7 +8,7 @@ namespace TQ.Shopping
 	{
 		#region Fields
 
-		//Could be behing a facade..
+		//Could be behing a facade
 		private readonly IDiscountCalculator _discountCalculator;
 		private readonly ITotalSumCalculator _totalSumCalculator;
 		private readonly IShoppingCartLogger _logger;
@@ -42,6 +43,8 @@ namespace TQ.Shopping
 			Articles.Add(article);
 			/* Could use ApplyDiscounts(method located in CalculateTotal()) here to have responsive shopping cart
 			 * Reset discounts method also needed in real application because multiple calls to ApplyDiscounts will aplly same discount more than once
+			 * Apply discounts could also be called on its own if needed, if a web app requires applying discounts only at the end of a shopping proccess,
+			 * before paying and calculating last total
 			 */
 		}
 

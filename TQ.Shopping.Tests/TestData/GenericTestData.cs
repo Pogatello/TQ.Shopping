@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using TQ.Shopping.Discounts;
+using TQ.Shopping.Discounts.Calculators;
 using TQ.Shopping.Loggers;
 using TQ.Shopping.TotalSum;
 

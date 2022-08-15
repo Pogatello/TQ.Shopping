@@ -44,10 +44,9 @@
 
 		public void Apply(ShoppingCart cart)
 		{
-			//Should be changed a bit, possible problem is that discount will be always applied to last article
-			//so it will lead to a loss of discounts if that article by article code is eligible for more than one discount
-			//Depends on the business rules if they allow multiple discounts or not (or one discount per article - priority?)
-			var articleFromCart = cart.Articles.LastOrDefault(x => x.Code == DiscountedArticleCode);
+			//Should be changed a bit, could lead to a loss of discounts, for now it is first discount that comes that one is applied.
+			//Depends on the business rules if they allow multiple discounts or not (or one discount per article), or even discount priority
+			var articleFromCart = cart.Articles.LastOrDefault(x => x.Code == DiscountedArticleCode && !x.IsDiscountApplied());
 
 			if (articleFromCart != null)
 			{

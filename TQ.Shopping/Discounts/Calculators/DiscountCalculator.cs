@@ -1,6 +1,6 @@
 ﻿using TQ.Shopping.Discounts;
 
-namespace TQ.Shopping
+namespace TQ.Shopping.Discounts.Calculators
 {
 	public class DiscountCalculator : IDiscountCalculator
 	{
@@ -14,7 +14,7 @@ namespace TQ.Shopping
 
 		public DiscountCalculator(IEnumerable<IDiscount> discounts)
 		{
-			//Usually would grab all discounts from a DiscountRepository(database), so they could be changed in some backoffice application
+			//Could grab all discounts from a DiscountRepository(database), so they could be changed in some backoffice application
 			_discounts = discounts;
 		}
 
